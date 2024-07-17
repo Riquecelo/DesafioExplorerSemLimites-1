@@ -159,17 +159,19 @@
 textarea::placeholder,
 input::placeholder{
     color: var(--color-text-1);
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 .formulario form button{
-    width: 150px;
-    height: 45px;
-    border-radius: 16px;
+    width: 15.0rem;
+    height: 4.5rem;
+    border-radius: 1.6rem;
     border: 0;
     background: linear-gradient(to right, var(--bg-color-2), var(--bg-color-3));
     color: var(--color-text-2);
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
     font-weight: bold;
     margin-top: 1rem;
 }
@@ -183,6 +185,6 @@ footer{
     align-items: center;
     justify-content: center;
 
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 600;
 }
