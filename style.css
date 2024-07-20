@@ -52,7 +52,7 @@
 }
 
 .container main > button{
-    min-width: 5.8rem;
+    max-width: 5.8rem;
     min-height: 10rem;
     border-radius: 7.6rem;
     border: solid .4rem var(--color-title);
@@ -175,6 +175,9 @@ input::placeholder{
     font-weight: bold;
     margin-top: 1rem;
 }
+.formulario .background{
+    display: none;
+}
 
 footer{
     height: 7.8rem;
@@ -184,7 +187,67 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 1.9rem;
     font-weight: 600;
+}
+
+@media(min-width: 768px){
+    .container main{
+       position: relative;
+    }
+
+    .container main > img{
+        position: absolute;
+        height: 90%;
+        right: 10%;
+    }
+
+    .container main > p,
+    .container main > h1{
+        position: absolute;
+    }
+
+    .container main > p{
+        left: 5%;
+        top: 230px;
+    }
+    .container main > h1{
+        left: 5%;
+        top:190px;
+    }
+    
+    .container main > button{
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+    }
+    
+    .container .content{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .formulario{
+        display: flex;
+        height: 100vh;
+    }
+
+    .formulario form{
+        width: 50%;
+        padding: 0 5%;
+    }
+
+    .formulario form fieldset{
+        width:100%;
+    }
+    .formulario .background{
+        display: block;
+        width: 50%;
+        height: 100%;
+        background-image: url("img/background.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
 }

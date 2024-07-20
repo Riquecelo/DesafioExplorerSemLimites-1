@@ -12,9 +12,13 @@
 <body>
     <div class="container">
         <main>
-            <img src="img/astronauta-mobile.png" alt="Desenho de um astronauta flutuando entre planetas">
-
-            <h1>Explore sem limites</h1>
+            <img src="img/astronauta-mobile.png"
+            srcset="img/astronauta-mobile.png 364w,
+            img/astronauta-desktop.png 720w"
+            sizes="(max-width: 600px) 364px, 720w"
+            alt="Desenho de um astronauta flutuando entre planetas">
+            
+            <h1 class="reverse">Explore sem limites</h1>
             <p>Porque o aprendizado é contínuo</p>
             <button>
                 <img src="img/arrow.png" alt="">
@@ -47,6 +51,7 @@
                     <button>Enviar Mensagem</button>
                 </fieldset>
             </form>
+            <div class="background"></div>
         </section>
         <footer>
             © 2023 - Rocketseat Explorer
